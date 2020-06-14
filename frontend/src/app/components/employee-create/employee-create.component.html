@@ -69,6 +69,26 @@
         </div>
 
         <div class="form-group">
+          <label for="inputVerify3">Peer Rating</label>
+          <input type="range" min="1" max="5" value="2" class="slider" id="peerRatingRange" formControlName="peerRating" onfocus="peerOutputId.value = peerRatingRange.value">
+          <output name="peerOutputName" id="peerOutputId"></output>
+          <!-- error -->
+          <div class="invalid-feedback" *ngIf="submitted && myForm.peerRating.errors?.required">
+            Enter rating.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputVerify3">Skills</label>
+          <input type="range" min="1" max="5" value="2" class="slider" id="skillsRange" formControlName="skills" onfocus="skillsOutputId.value = skillsRange.value">
+          <output name="skillsOutputName" id="skillsOutputId"></output>
+          <!-- error -->
+          <div class="invalid-feedback" *ngIf="submitted && myForm.skills.errors?.required">
+            Enter skills.
+          </div>
+        </div>
+
+        <div class="form-group">
           <button class="btn btn-primary btn-lg btn-block" type="submit">Register</button>
         </div>
       </form>

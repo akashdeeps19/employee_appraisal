@@ -34,7 +34,9 @@ export class EmployeeEditComponent implements OnInit {
       designation: ['', [Validators.required]],
       phoneNumber: ['', [Validators.required, Validators.pattern('^[0-9]+$')]],
       supervisor: ['', [Validators.required]],
-      salary: ['', [Validators.required]]
+      salary: ['', [Validators.required]],
+      peerRating: ['', [Validators.required]],
+      skills: ['', [Validators.required]]
     })
   }
 
@@ -59,6 +61,8 @@ export class EmployeeEditComponent implements OnInit {
         phoneNumber: data['phoneNumber'],
         supervisor : data['supervisor'],
         salary : data['salary'],
+        peerRating : data['peerRating'],
+        skills : data['skills']
       });
     });
   }
@@ -70,7 +74,9 @@ export class EmployeeEditComponent implements OnInit {
       designation: ['', [Validators.required]],
       phoneNumber: ['', [Validators.required, Validators.pattern('^[0-9]+$')]],
       supervisor: ['', [Validators.required]],
-      salary: ['', [Validators.required]]
+      salary: ['', [Validators.required]],
+      peerRating: ['', [Validators.required]],
+      skills: ['', [Validators.required]]
     })
   }
 

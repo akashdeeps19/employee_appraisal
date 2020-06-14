@@ -15,7 +15,9 @@
           <p><b>Phone No : </b>{{employee.phoneNumber}}</p>
           <p><b>Supervisor : </b>{{employee.supervisor}}</p>
           <p><b>Salary : </b>{{employee.salary}}</p>
-          <p><b>Update : </b>
+          <p><b>Peer Rating : </b>{{employee.peerRating}}</p>
+          <p><b>Skills : </b>{{employee.skills}}</p>
+          <p><b> </b>
             <span class="edit" style="margin-right: 10px;" [routerLink]="['/edit-employee/', employee._id]">
               <button type="button" class="btn btn-primary btn-sm">Edit</button>
             </span>

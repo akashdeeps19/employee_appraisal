@@ -20,7 +20,13 @@ let Employee = new Schema({
    },
    salary: {
       type: Number
-   }
+   },
+   peerRating: {
+      type: Number
+   },
+   skills: {
+      type: Number
+   },
 }, {
    collection: 'employees'
 })

@@ -5,4 +5,6 @@ export class Employee {
    phoneNumber: number;
    supervisor : string;
    salary : number;
+   peerRating : number;
+   skills : number;
 }
