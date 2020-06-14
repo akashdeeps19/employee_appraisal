@@ -1,0 +1,15 @@
+
+
+.card{
+    padding: 1rem 2rem;
+    background-color : aliceblue;
+}
+
+.full-card{
+    margin-bottom: 1rem;
+    box-shadow: 5px 5px 5px 2px rgba(0,0,0,0.2);
+}
+
+p{
+    font-size: large;
+}
