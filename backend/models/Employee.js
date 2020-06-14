@@ -14,6 +14,12 @@ let Employee = new Schema({
    },
    phoneNumber: {
       type: Number
+   },
+   supervisor: {
+      type: String
+   },
+   salary: {
+      type: Number
    }
 }, {
    collection: 'employees'
