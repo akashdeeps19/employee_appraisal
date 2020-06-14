@@ -51,6 +51,24 @@
         </div>
 
         <div class="form-group">
+          <label for="inputName">Supervisor</label>
+          <input class="form-control" type="text" formControlName="supervisor">
+          <!-- error -->
+          <div class="invalid-feedback" *ngIf="submitted && myForm.supervisor.errors?.required">
+            Supervisor is required.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputVerify3">Salary</label>
+          <input class="form-control" type="number" formControlName="salary">
+          <!-- error -->
+          <div class="invalid-feedback" *ngIf="submitted && myForm.salary.errors?.required">
+            Enter salary.
+          </div>
+        </div>
+
+        <div class="form-group">
           <button class="btn btn-primary btn-lg btn-block" type="submit">Register</button>
         </div>
       </form>
