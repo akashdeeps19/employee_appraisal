@@ -7,4 +7,7 @@ export class Employee {
    salary : number;
    peerRating : number;
    skills : number;
+   workDone : number;
+   customerRating : number;
+   quality : number;
 }

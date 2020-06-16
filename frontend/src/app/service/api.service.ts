@@ -10,10 +10,27 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 export class ApiService {
   
   baseUri:string = 'http://localhost:4000/api';
+  authUri:string = 'http://localhost:4000/auth';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
   constructor(private http: HttpClient) { }
 
+
+  login(data): Observable<any> {
+    let url = `${this.authUri}/login`;
+    return this.http.post(url, data)
+      .pipe(
+        catchError(this.errorMgmt)
+      )
+  }
+
+  signup(data): Observable<any> {
+    let url = `${this.authUri}/signup`;
+    return this.http.post(url, data)
+      .pipe(
+        catchError(this.errorMgmt)
+      )
+  }
   // Create
   createEmployee(data): Observable<any> {
     let url = `${this.baseUri}/create`;

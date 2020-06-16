@@ -91,6 +91,39 @@
             </div>
           </div>
 
+          <div class="form-group">
+            <label for="inputVerify3">Work Done</label>
+            <input type="range" min="1" max="5" value="2" class="slider" id="workDoneRange" formControlName="workDone"
+            oninput="workDoneOutputId.value = workDoneRange.value" onfocus="workDoneOutputId.value = workDoneRange.value">
+            <output name="workDoneOutputName" id="workDoneOutputId"></output>
+            <!-- error -->
+            <div class="invalid-feedback" *ngIf="submitted && myForm.workDone.errors?.required">
+              Enter Work Done.
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="inputVerify3">Customer Rating</label>
+            <input type="range" min="1" max="5" value="2" class="slider" id="customerRatingRange" formControlName="customerRating"
+            oninput="customerRatingOutputId.value = customerRatingRange.value" onfocus="customerRatingOutputId.value = customerRatingRange.value">
+            <output name="customerRatingOutputName" id="customerRatingOutputId"></output>
+            <!-- error -->
+            <div class="invalid-feedback" *ngIf="submitted && myForm.customerRating.errors?.required">
+              Enter Customer Rating.
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="inputVerify3">Quality</label>
+            <input type="range" min="1" max="5" value="2" class="slider" id="qualityRange" formControlName="quality"
+            oninput="qualityOutputId.value = qualityRange.value" onfocus="qualityOutputId.value = qualityRange.value">
+            <output name="qualityOutputName" id="qualityOutputId"></output>
+            <!-- error -->
+            <div class="invalid-feedback" *ngIf="submitted && myForm.quality.errors?.required">
+              Enter Quality.
+            </div>
+          </div>
+
            <div class="form-group">
              <button class="btn btn-primary btn-lg btn-block" type="submit">Update</button>
            </div>

@@ -7,7 +7,7 @@
     <div class="card full-card">
       <p><b>ID : </b>{{employee._id}}</p>
       <p><b>Name : </b>{{employee.name}}</p>
-      <p><a href="#collapse-{{ i }}" class="btn btn-primary" data-toggle="collapse">more</a></p>
+      <p><a href="#collapse-{{ i }}" class="btn btn-primary" data-toggle="collapse" (click)="showChart(i)">more</a></p>
       <div class="collapse" id="collapse-{{ i }}">
         <div class="card card-body">
           <p><b>Email : </b>{{employee.email}}</p>
@@ -15,8 +15,9 @@
           <p><b>Phone No : </b>{{employee.phoneNumber}}</p>
           <p><b>Supervisor : </b>{{employee.supervisor}}</p>
           <p><b>Salary : </b>{{employee.salary}}</p>
-          <p><b>Peer Rating : </b>{{employee.peerRating}}</p>
-          <p><b>Skills : </b>{{employee.skills}}</p>
+          <!-- <p><b>Peer Rating : </b>{{employee.peerRating}}</p>
+          <p><b>Skills : </b>{{employee.skills}}</p> -->
+          <canvas id="lineCharts-{{ i }}"></canvas>
           <p><b> </b>
             <span class="edit" style="margin-right: 10px;" [routerLink]="['/edit-employee/', employee._id]">
               <button type="button" class="btn btn-primary btn-sm">Edit</button>

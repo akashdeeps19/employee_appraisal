@@ -36,7 +36,10 @@ export class EmployeeEditComponent implements OnInit {
       supervisor: ['', [Validators.required]],
       salary: ['', [Validators.required]],
       peerRating: ['', [Validators.required]],
-      skills: ['', [Validators.required]]
+      skills: ['', [Validators.required]],
+      workDone: ['', [Validators.required]],
+      customerRating: ['', [Validators.required]],
+      quality: ['', [Validators.required]],
     })
   }
 
@@ -62,7 +65,10 @@ export class EmployeeEditComponent implements OnInit {
         supervisor : data['supervisor'],
         salary : data['salary'],
         peerRating : data['peerRating'],
-        skills : data['skills']
+        skills : data['skills'],
+        workDone : data['workDone'],
+        customerRating : data['customerRating'],
+        quality : data['quality'],
       });
     });
   }
@@ -76,7 +82,10 @@ export class EmployeeEditComponent implements OnInit {
       supervisor: ['', [Validators.required]],
       salary: ['', [Validators.required]],
       peerRating: ['', [Validators.required]],
-      skills: ['', [Validators.required]]
+      skills: ['', [Validators.required]],
+      workDone: ['', [Validators.required]],
+      customerRating: ['', [Validators.required]],
+      quality: ['', [Validators.required]],
     })
   }
 
