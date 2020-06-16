@@ -27,6 +27,15 @@ let Employee = new Schema({
    skills: {
       type: Number
    },
+   customerRating: {
+      type: Number
+   },
+   workDone: {
+      type: Number
+   },
+   quality: {
+      type: Number
+   }
 }, {
    collection: 'employees'
 })
